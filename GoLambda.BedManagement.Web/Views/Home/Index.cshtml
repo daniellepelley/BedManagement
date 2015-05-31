@@ -2,30 +2,208 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    @{
+        ViewBag.Title = "Inbox";
+    }
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-lg-12 animated fadeInRight">
+                <div class="mail-box">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Bed</th>
+                                    <th>Name </th>
+                                    <th>Phone </th>
+                                    <th>Company </th>
+                                    <th>Completed </th>
+                                    <th>Task</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Project <span class="label label-warning pull-right">Delayed</span></td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project<span class="label label-danger pull-right">Urgent</span></td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Betha project<span class="label label-info pull-right">Outlier</span></td>
+                                    <td>John Smith</td>
+                                    <td>0800 1111</td>
+                                    <td>Erat Volutpat</td>
+                                    <td><span class="pie">3,1</span></td>
+                                    <td>75%</td>
+                                    <td>Jul 18, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Project <small>This is example of project</small></td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Project <small>This is example of project</small></td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Betha project</td>
+                                    <td>John Smith</td>
+                                    <td>0800 1111</td>
+                                    <td>Erat Volutpat</td>
+                                    <td><span class="pie">3,1</span></td>
+                                    <td>75%</td>
+                                    <td>Jul 18, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Alpha project</td>
+                                    <td>Alice Jackson</td>
+                                    <td>0500 780909</td>
+                                    <td>Nec Euismod In Company</td>
+                                    <td><span class="pie">6,9</span></td>
+                                    <td>40%</td>
+                                    <td>Jul 16, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Project <small>This is example of project</small></td>
+                                    <td>Patrick Smith</td>
+                                    <td>0800 051213</td>
+                                    <td>Inceptos Hymenaeos Ltd</td>
+                                    <td><span class="pie">0.52/1.561</span></td>
+                                    <td>20%</td>
+                                    <td>Jul 14, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Gamma project</td>
+                                    <td>Anna Jordan</td>
+                                    <td>(016977) 0648</td>
+                                    <td>Tellus Ltd</td>
+                                    <td><span class="pie">4,9</span></td>
+                                    <td>18%</td>
+                                    <td>Jul 22, 2013</td>
+                                    <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+    @*@section Styles {
+        @Styles.Render("~/Content/plugins/iCheck/iCheckStyles")
+    }*@
+
+    @section Scripts {
+        @Scripts.Render("~/plugins/iCheck")
+
+        <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+
+        });
+        </script>
+    }
